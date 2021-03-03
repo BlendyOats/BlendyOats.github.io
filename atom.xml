@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://BlendyOats.github.io</id>
     <title>oats</title>
-    <updated>2021-03-03T10:21:52.873Z</updated>
+    <updated>2021-03-03T10:31:34.572Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://BlendyOats.github.io"/>
     <link rel="self" href="https://BlendyOats.github.io/atom.xml"/>
@@ -21,7 +21,7 @@
 <pre><code class="language-bash">docker pull nacos/nacos-server
 docker run --name nacos -e MODE=standalone -p 8848:8848 -d nacos/nacos-server
 </code></pre>
-<h2 id="12mogo">1.2.mogo</h2>
+<h2 id="12mongo">1.2.mongo</h2>
 <pre><code class="language-bash">docker pull mongo
 docker run --name mongo -p 27017:27017 -d mongo --auth
 </code></pre>
