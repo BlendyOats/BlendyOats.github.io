@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://BlendyOats.github.io</id>
     <title>oats</title>
-    <updated>2021-03-03T08:32:14.788Z</updated>
+    <updated>2021-03-03T08:41:28.553Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://BlendyOats.github.io"/>
     <link rel="self" href="https://BlendyOats.github.io/atom.xml"/>
@@ -10,4 +10,38 @@
     <logo>https://BlendyOats.github.io/images/avatar.png</logo>
     <icon>https://BlendyOats.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, oats</rights>
+    <entry>
+        <title type="html"><![CDATA[个人开发工作站搭建]]></title>
+        <id>https://BlendyOats.github.io/post/001/</id>
+        <link href="https://BlendyOats.github.io/post/001/">
+        </link>
+        <updated>2021-03-03T08:34:49.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="1images">1.Images</h1>
+<h2 id="11nacos-server">1.1.nacos-server</h2>
+<pre><code class="language-bash">docker pull nacos/nacos-server
+docker run --name nacos -e MODE=standalone -p 8848:8848 -d nacos/nacos-server
+</code></pre>
+<h2 id="12mogo">1.2.mogo</h2>
+<pre><code class="language-bash">docker pull mongo
+docker run --name mongo -p 27017:27017 -d mongo --auth
+</code></pre>
+<h2 id="13redis">1.3.redis</h2>
+<pre><code class="language-bash">docker pull redis
+docker run --name redis -p 6379:6379 -d redis
+</code></pre>
+<h2 id="14mysql">1.4.mysql</h2>
+<pre><code class="language-bash"> docker pull mysql:5.7
+ docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+</code></pre>
+<h2 id="15seata-server">1.5.seata-server</h2>
+<pre><code class="language-bash">docker pull seataio/seata-server
+docker run --name seata-server -p 8091:8091 seataio/seata-server:latest
+</code></pre>
+<h2 id="16sentinel-dashboard">1.6.sentinel-dashboard</h2>
+<pre><code class="language-bash">docker pull bladex/sentinel-dashboard
+docker run --name sentinel  -p 8858:8858 -d  bladex/sentinel-dashboard
+</code></pre>
+<h2 id="17rocketmq">1.7.rocketMq</h2>
+]]></content>
+    </entry>
 </feed>
