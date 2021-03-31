@@ -2,20 +2,18 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>个人开发工作站搭建 | oats</title>
+<title>小程序解密用户信息报 IV not 16 bytes long | oats</title>
 <link rel="shortcut icon" href="https://BlendyOats.github.io/favicon.ico?v=1617171494703">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://BlendyOats.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="个人开发工作站搭建 | oats - Atom Feed" href="https://BlendyOats.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="小程序解密用户信息报 IV not 16 bytes long | oats - Atom Feed" href="https://BlendyOats.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="1.Images
-1.1.nacos-server
-docker pull nacos/nacos-server
-docker run --name nacos -e MODE=standalone -p 8848:8848 -d naco..." />
-    <meta name="keywords" content="docker" />
+    <meta name="description" content="解密前对乱码的字符串进行处理
+ String encrypted = URLEncoder.encode(encryptedData, &quot;UTF-8&quot;).replace(&quot;%3D&quot;, &quot;=&..." />
+    <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -71,72 +69,41 @@ docker run --name nacos -e MODE=standalone -p 8848:8848 -d naco..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              个人开发工作站搭建
+              小程序解密用户信息报 IV not 16 bytes long
             </h2>
             <div class="post-info">
               <span>
-                2021-03-03
+                2021-03-31
               </span>
               <span>
                 1 min read
               </span>
               
-                <a href="https://BlendyOats.github.io/tag/-O0lBJYJA/" class="post-tag">
-                  # docker
-                </a>
-              
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h1 id="1images">1.Images</h1>
-<h2 id="11nacos-server">1.1.nacos-server</h2>
-<pre><code class="language-bash">docker pull nacos/nacos-server
-docker run --name nacos -e MODE=standalone -p 8848:8848 -d nacos/nacos-server
+                <p>解密前对乱码的字符串进行处理</p>
+<pre><code> String encrypted = URLEncoder.encode(encryptedData, &quot;UTF-8&quot;).replace(&quot;%3D&quot;, &quot;=&quot;).replace(&quot;%2F&quot;, &quot;/&quot;);
 </code></pre>
-<h2 id="12mongo">1.2.mongo</h2>
-<pre><code class="language-bash">docker pull mongo
-docker run --name mongo -p 27017:27017 -d mongo --auth
-</code></pre>
-<h2 id="13redis">1.3.redis</h2>
-<pre><code class="language-bash">docker pull redis
-docker run --name redis -p 6379:6379 -d redis
-</code></pre>
-<h2 id="14mysql">1.4.mysql</h2>
-<pre><code class="language-bash"> docker pull mysql:5.7
- docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
-</code></pre>
-<h2 id="15seata-server">1.5.seata-server</h2>
-<pre><code class="language-bash">docker pull seataio/seata-server
-docker run --name seata-server -p 8091:8091 seataio/seata-server:latest
-</code></pre>
-<h2 id="16sentinel-dashboard">1.6.sentinel-dashboard</h2>
-<pre><code class="language-bash">docker pull bladex/sentinel-dashboard
-docker run --name sentinel  -p 8858:8858 -d  bladex/sentinel-dashboard
-</code></pre>
-<h2 id="17rocketmq">1.7.rocketMq</h2>
 
               </div>
               <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#1images">1.Images</a>
-<ul>
-<li><a href="#11nacos-server">1.1.nacos-server</a></li>
-<li><a href="#12mongo">1.2.mongo</a></li>
-<li><a href="#13redis">1.3.redis</a></li>
-<li><a href="#14mysql">1.4.mysql</a></li>
-<li><a href="#15seata-server">1.5.seata-server</a></li>
-<li><a href="#16sentinel-dashboard">1.6.sentinel-dashboard</a></li>
-<li><a href="#17rocketmq">1.7.rocketMq</a></li>
-</ul>
-</li>
-</ul>
-
+                
               </div>
             </div>
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://BlendyOats.github.io/post/idea-20203-javalangunsupportedclassversionerror/">
+              <h3 class="post-title">
+                IDEA 2020.3 java.lang.UnsupportedClassVersionError
+              </h3>
+            </a>
+          </div>
         
 
         

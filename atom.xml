@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://BlendyOats.github.io</id>
     <title>oats</title>
-    <updated>2021-03-26T01:35:07.363Z</updated>
+    <updated>2021-03-31T06:18:20.668Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://BlendyOats.github.io"/>
     <link rel="self" href="https://BlendyOats.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://BlendyOats.github.io/images/avatar.png</logo>
     <icon>https://BlendyOats.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, oats</rights>
+    <entry>
+        <title type="html"><![CDATA[小程序解密用户信息报 IV not 16 bytes long]]></title>
+        <id>https://BlendyOats.github.io/post/xiao-cheng-xu-jie-mi-yong-hu-xin-xi-bao-iv-not-16-bytes-long/</id>
+        <link href="https://BlendyOats.github.io/post/xiao-cheng-xu-jie-mi-yong-hu-xin-xi-bao-iv-not-16-bytes-long/">
+        </link>
+        <updated>2021-03-31T06:17:17.000Z</updated>
+        <content type="html"><![CDATA[<p>解密前对乱码的字符串进行处理</p>
+<pre><code> String encrypted = URLEncoder.encode(encryptedData, &quot;UTF-8&quot;).replace(&quot;%3D&quot;, &quot;=&quot;).replace(&quot;%2F&quot;, &quot;/&quot;);
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[IDEA 2020.3 java.lang.UnsupportedClassVersionError]]></title>
         <id>https://BlendyOats.github.io/post/idea-20203-javalangunsupportedclassversionerror/</id>
